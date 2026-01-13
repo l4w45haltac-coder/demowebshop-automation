@@ -1,0 +1,31 @@
+{
+  "name": "demowebshop-automation",
+  "version": "1.0.0",
+  "description": "E2E automation testing for Demo Web Shop using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "dotenv": "^16.3.1",
+    "csv-parse": "^5.5.3",
+    "xlsx": "^0.18.5",
+    "typescript": "^5.3.3"
+  }
+}
